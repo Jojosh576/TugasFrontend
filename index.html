@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lifestyle Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      .carousel-caption {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+      }
+      .carousel-caption h5 {
+        color: white;
+        font-size: 2rem;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+        width: 100%;
+      }
+      .carousel-item:nth-child(2) img,
+      .carousel-item:nth-child(3) img {
+        object-position: center top;
+      }
+      .center-text {
+        text-align: center;
+      }
+      .social-icons a {
+        margin: 0 10px;
+        color: inherit;
+        text-decoration: none;
+      }
+      .card {
+        height: 100%;
+        border: none;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      .card-img-top {
+        height: 200px;
+        object-fit: cover;
+        object-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="container-fluid">
+      <ul>
+        <li><strong>Lifestyle Vibes</strong></li>
+      </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#" role="button">Subscribe</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <!-- Carousel -->
+      <div id="LifestyleHubCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="gambar/Ring.jpeg" class="d-block w-100" alt="Ring">
+            <div class="carousel-caption">
+              <h5>Elegance in Every Detail</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/Trend.jpg" class="d-block w-100" alt="Trend">
+            <div class="carousel-caption">
+              <h5>Stay Ahead of the Trends</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="gambar/yukata.jpg" class="d-block w-100" alt="Yukata">
+            <div class="carousel-caption">
+              <h5>Embrace Cultural Beauty</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#LifestyleHubCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#LifestyleHubCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="grid center-text">
+        <section>
+          <hgroup>
+            <h2>Welcome to the Lifestyle Hub</h2>
+            <h3>Explore trends, wellness, and living your best life</h3>
+          </hgroup>
+          <p>
+            Lifestyle is all about finding balance, embracing health, and living
+            in the moment. Whether you're into fitness, mindfulness, or just
+            looking to elevate your daily routines, you've come to the right
+            place.
+          </p>
+          
+          <h3>Latest in Wellness</h3>
+          <p>
+            Discover the latest trends in wellness, from meditation techniques
+            to fitness tips that keep you grounded and healthy.
+          </p>
+        </section>
+      </div>
+
+      <div class="container my-5">
+        <h2 class="text-center">Trending Articles</h2>
+        <div class="row">
+          <div class="col-md-4 d-flex">
+            <div class="card h-100">
+              <a href="https://www.cbr.com/bleach-espada-best-costumes/" target="_blank">
+                <img src="Trend/espada.jpg" class="card-img-top" alt="Espada">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Espada</h5>
+                <p class="card-text">Explore the world of Espada with their unique powers and stylish sense (Approved by Aizen-sama).</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="card h-100">
+              <a href="https://pagesix.com/2021/09/13/lil-nas-x-wears-three-gold-outfits-on-met-gala-2021-red-carpet/" target="_blank">
+                <img src="Trend/lilnus.jpg" class="card-img-top" alt="Lil Nas">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Lil Nas</h5>
+                <p class="card-text">Discover the latest hits and style of Lil Nas, Bro think he is Gilgamesh from Fate Series.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 d-flex">
+            <div class="card h-100">
+              <a href="https://www.nbcnews.com/pop-culture/pop-culture-news/nikocado-avocado-secret-weight-loss-rcna170142" target="_blank">
+                <img src="Trend/nikocado.jpg" class="card-img-top" alt="Nikocado">
+              </a>
+              <div class="card-body">
+                <h5 class="card-title">Nikocado</h5>
+                <p class="card-text">Dive into the world of Nikocado and his culinary adventures, Friendly Reminder beware of his belly you could be eaten.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt-5 align-items-center" style="background-color: #007b8f; color: white; padding: 20px;">
+        <div class="col-md-6">
+          <h2>Fuel Your Lifestyle</h2>
+          <p>Discover PRIME Hydration - Refresh, Replenish, Refuel, Approved by KSI and Logan Paul</p>
+          <a href="https://drinkprime.com/?srsltid=AfmBOopVLa2RZfqsa-TIhGl8Y9xfK9UOvxS0hEG4K2k-51HaEuNyhzGN" target="_blank" class="btn btn-light">Shop Now</a>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="gambar/prime.jpg" class="img-fluid" alt="Prime Bottles" style="max-height: 250px;">
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <section aria-label="Subscribe example">
+      <div class="container">
+        <article>
+          <hgroup>
+            <h2>Join Our Community</h2>
+            <h3>Subscribe for the latest lifestyle updates</h3>
+          </hgroup>
+          <form class="grid">
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First Name"
+              aria-label="First Name"
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              aria-label="Email"
+              required
+            />
+            <button type="submit" onclick="event.preventDefault()">
+              Subscribe
+            </button>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <footer class="container center-text">
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-tiktok"></i></a>
+      </div>
+      <small>
+        © 2024 Lifestyle Vibes Joshua Alexander. All rights reserved. |
+        <a href="#">Privacy Policy</a> |
+        <a href="#">Terms & Conditions</a>
+      </small>
+    </footer>
+  </body>
+</html>
